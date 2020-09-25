@@ -1,0 +1,33 @@
+#include <stdio.h>
+
+int main()
+{
+char genero;
+
+printf("Qual inicial do seu gênero?  ");
+genero = getchar();
+
+
+switch(genero){
+    case 'M':
+        printf("Seu gênero é Masculino");
+        break;
+    case 'm':
+        printf("Seu gênero é Masculino");
+        break;
+    case 'F':
+        printf("Seu gênero é Feminino");
+        break;
+    case 'f':
+        printf("Seu gênero é Feminino");
+        break;
+    default:
+        printf("Digite um gênero válido, pela letra inicial");
+        break;
+
+}
+
+
+
+return 0;
+}
