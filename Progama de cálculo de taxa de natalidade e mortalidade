@@ -1,0 +1,35 @@
+#include <stdio.h>
+
+int main()
+{
+float nascidos, mortos, resultado, habitantes; int tipo;
+
+printf("Qual operação a ser calculada: n 1.Taxa de natalidade n 2.Taxa de mortalidade t");
+scanf("%d", &tipo);
+
+switch(tipo){
+    case 1:
+        printf("Informe o número de nascidos: ");
+        scanf("%f", &nascidos);
+        printf("Informe o número de habitantes: ");
+        scanf("%f", &habitantes);
+        resultado = (nascidos * 1000)/habitantes;
+        printf("A taxa de natalidade será de %.2f", resultado = (nascidos * 1000)/habitantes);
+        break;
+    case 2:
+        printf("Informe o número de mortos: ");
+        scanf("%f", &mortos);
+        printf("Informe o número de habitantes: ");
+        scanf("%f", &habitantes);
+        printf("A taxa de mortalidade será de %.2f", resultado = (mortos * 1000)/habitantes);
+        break;
+    default:
+        printf("Digite uma operação válida!");
+        break;
+
+}
+
+
+
+return 0;
+}
