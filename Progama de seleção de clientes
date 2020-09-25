@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+int main()
+{
+float valor, resultado; int cliente;
+printf("Qual seu valor total a ser pago :");
+scanf("%f", &valor);
+
+printf("Informe que tipo de cliente você é: n 1.Comum n 2.VIP n 3.Funcionário t ");
+scanf("%d", &cliente);
+
+if(cliente == 1){
+    printf("Seu valor total a ser pago é: %.2f ", valor);
+}else if( cliente == 2){
+    resultado = valor - (valor * 5/100);
+    printf("Seu valor total a ser pago é : %.2f ", resultado);
+}else if( cliente == 3){
+    resultado = valor - (valor * 10/100);
+    printf("Seu valor total a ser pago é : %.2f ", resultado);
+}
+
+return 0;
+}
