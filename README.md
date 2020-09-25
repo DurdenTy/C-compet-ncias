@@ -1,2 +1,2 @@
-# C-compet-ncias
+#  Linguagem C-competências
 Progamas criados em C
