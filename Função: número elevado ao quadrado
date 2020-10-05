@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+int potencia(int x);
+
+int main()
+{
+   int m, x;
+   printf("Coloque seu número para ser elevado ao quadrado: ");
+   scanf("%d", &x);
+   m = potencia(x);
+   printf("%d elevado ao quadrado é: %d", x, m);
+
+    return 0;
+}
+
+int potencia(int x){
+    
+    return x = x * x;
+}
