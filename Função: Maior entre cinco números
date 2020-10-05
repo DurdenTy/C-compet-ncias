@@ -1,0 +1,29 @@
+#include <stdio.h>
+
+int maior(int v, int w, int x, int y, int z);
+
+int main()
+{
+   int m, x, v, w, y, z;
+   printf("Coloque seu número para ver seu fatorial: ");
+   scanf("%d %d %d %d %d", &v, &w, &x, &y, &z);
+   m = maior(v, w, x, y, z);
+   printf("O maior número é %d", m);
+
+    return 0;
+}
+
+int maior(int v, int w, int x, int y, int z){
+    int maior;
+    if(v > w && v > x && v > z){
+        return v;
+    }else if(w > v && w > x && w > y && w > z){
+        return w;
+    }else if(x > v && x > w && x > y && x > z){
+        return x;
+    }else if(y > v && y > w && y > x && y > z){
+        return y;
+    }else{
+        return z;
+    }
+}
