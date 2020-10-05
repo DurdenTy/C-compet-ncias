@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+int potencia(int x, int z);
+
+int main()
+{
+   int m, x, z;
+   printf("Coloque seu número para ser elevado a um fator, nessa ordem: ");
+   scanf("%d %d", &x, &z);
+   m = potencia(x, z);
+   printf("%d elevado a %d é: %d", x, z, m);
+
+    return 0;
+}
+
+int potencia(int x, int z){
+    if(z == 0){
+        return 1;
+    }
+    else{
+        return x = x * ((potencia(x, z - 1)));
+    }
+}
