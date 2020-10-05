@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+int inverso(int x);
+
+int main()
+{
+   int x; float m;
+   printf("Coloque seu número para ver seu fatorial: ");
+   scanf("%d", &x);
+   m = inverso(x);
+   printf("%f", m);
+
+    return 0;
+}
+
+int inverso(int x){
+    int S;
+    if(x == 1){
+        return 1;
+    }
+    return S =  1 + (1 / (1 * 1)) + 1 / (2 * 1) + 1 / (3 * 2 * 1) + x * inverso(x - 1);
+}
