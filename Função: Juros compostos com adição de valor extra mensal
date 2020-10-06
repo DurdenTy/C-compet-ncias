@@ -1,0 +1,40 @@
+#include <stdio.h>
+
+float aposentadoria(float V, float n);
+float aposentadoria2(float n);
+
+int main()
+{
+    float p, n, M, N, V;
+    printf("Coloque o valor seu capital: ");
+    scanf("%f", &p);
+    printf("Coloque seus meses: ");
+    scanf("%f", &n);
+    printf("Coloque seu valor adicional mensal: ");
+    scanf("%f", &V);
+    
+    M = aposentadoria2(n) * p;
+    N = (aposentadoria(V, n) - 1) + M;
+    printf("Seu montante é : R$%.2f Reais", N);
+   
+
+    return 0;
+}
+
+float aposentadoria(float V, float n){
+    float S;
+    if(n == 0){
+        return 1;
+    }else{
+        S = V + (1.00116) * (aposentadoria(V, n - 1));
+    }
+}
+
+float aposentadoria2(float n){
+    float S2;
+    if(n == 0){
+        return 1;
+    }else{
+        S2 = (1.00116) * (aposentadoria2(n - 1));
+    }
+}
