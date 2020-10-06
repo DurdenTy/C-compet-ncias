@@ -1,0 +1,13 @@
+#include <stdio.h>
+int main()
+{
+  int i[5] = {40, 30, 20, 10, 0};
+  int *u;
+  u = i;
+  
+  for(int o = 0; o < 5; o++){
+      printf("%d %x \n", u[o], &u);
+  }
+
+  return 0;
+} 
