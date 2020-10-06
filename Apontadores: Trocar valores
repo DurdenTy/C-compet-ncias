@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+void trocar(int *num, int *num2);
+
+
+
+int main()
+{
+    int x, y;
+    printf("Coloque 2 números para trocar os seus valores: ");
+    scanf("%d %d", &x, &y);
+    trocar(&x, &y);
+    printf("o valor de x agora é %d e o valor de y agora é %d!", x, y);
+
+
+  return 0;
+} 
+
+
+
+void trocar(int *num, int *num2){
+    int troca;
+    troca = *num;
+    *num = *num2;
+    *num2 = troca;
+}
