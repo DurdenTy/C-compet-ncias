@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main() {
+    
+    int Array2D[3][4] = {
+        {11, 22, 33, 44},
+        {55, 66, 77, 88},
+        {91, 19, 81, 18}
+    };
+    
+    int i, u;
+    
+    for(i = 0; i < 3; i++){
+        for (u = 0; u < 4; u++){
+            printf("    %d   ", Array2D[i][u]);
+        }
+        printf("\n");
+    }
+   
+	return 0;
+}
