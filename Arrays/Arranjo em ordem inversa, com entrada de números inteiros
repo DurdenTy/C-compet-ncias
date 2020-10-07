@@ -1,0 +1,19 @@
+#include <stdio.h>
+int main()
+{
+  
+    int array[7];     
+    int i;
+  
+    while(i != 7){
+        printf("Coloque seus cada número após o enter para inverter sua ordem: ");
+        scanf("%d", &array[i]);
+        i++;
+}
+    printf("                seus números em ordem inversa serão \n\n");
+    for(int u = 6; u > -1; u--){
+        printf("   %d \t", array[u]);
+    }
+
+  return 0;
+} 
