@@ -1,0 +1,18 @@
+#include <stdio.h>
+int main()
+{
+  
+    int array[7];     
+    int i = 0, k;
+  
+    while(i != 7){
+        printf("Coloque seus números para somar, aperte enter após o outro: ");
+        scanf("%d", &array[i]);
+        i++;
+    }
+    for(int u = 0; u < 7; u++){
+        k += array[u];
+    }
+    printf(" A somas dos seus números será: %d \t", k);
+  return 0;
+} 
