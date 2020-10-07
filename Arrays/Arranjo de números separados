@@ -1,0 +1,18 @@
+#include <stdio.h>
+int main()
+{
+  
+  int array[8];     
+  int i;
+  
+  while(i != 7){
+    printf("Coloque números iguais ou distintos, um após o enter: ");
+    scanf("%d", &array[i]);
+    i++;
+}
+    for(int u = 0; u < 7; u++){
+        printf(" Seus números selecionados foi: %d \t", array[u]);
+    }
+
+  return 0;
+} 
