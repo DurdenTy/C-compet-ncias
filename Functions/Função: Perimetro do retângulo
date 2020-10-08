@@ -1,0 +1,30 @@
+#include <stdio.h>  
+
+
+
+float volume(float num1, float num2);
+
+
+int main()
+{
+    float m, num1, num2;
+    printf("Coloque os lado do retângulo: ");
+    scanf("%f", &num1);
+    printf("Coloque a altura do retângulo: ");
+    scanf("%f", &num2);
+    
+    m = volume(num1, num2);
+    
+    printf(" O perimetro do retângulo é %f", m);
+    
+    
+    
+    return 0;
+}
+
+float volume(float num1, float num2){
+    float i;
+    
+    return i = (num1 + num2) * 2;
+    
+}
