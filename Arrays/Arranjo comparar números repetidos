@@ -4,8 +4,9 @@ int main()
   
     int array[7];
     int arraycopy[7];
+    int arrayrg[7];
     
-    int i = 0, k;
+    int i = 0, k, m;
   
     while(i != 7){
         printf("Coloque seus números para copiar, aperte enter após o outro: ");
@@ -15,17 +16,26 @@ int main()
     
     for(int y = 0; y < 7; y++){
         arraycopy[y] = array[y];
+        arrayrg[y] = 0;
     }
     for(int u = 0; u < 7; u++){
         for(int l = 0; l < 7; l++){
             printf("%d     %d \n", arraycopy[u], array[l]);
-            if(arraycopy[u] == array[l]){
+            
+            if(array[u] == arraycopy[l]){
+            arrayrg[l] = k;
             k++;
             }
         }
+        k = 1;
     }
+    for(int t = 0; t < 7; t++){
+        if(arrayrg[t] == 2){
+            m++;
+        }
+    }
+    printf("O total de números iguais serão: %d \n", m);
     
-    printf("O total de números iguais serão: %d \n", k);
     
   return 0;
 } 
