@@ -1,0 +1,31 @@
+
+#include <stdio.h>  
+
+
+
+float conversao(float num1, float num2);
+
+
+int main()
+{
+    float m, num1, num2;
+    printf("Coloque total de horas: ");
+    scanf("%f", &num1);
+    printf("Coloque total de minutos: ");
+    scanf("%f", &num2);
+    
+    m = conversao(num1, num2);
+    
+    printf(" O total de minutos é %.0f", m);
+    
+    
+    
+    return 0;
+}
+
+float conversao(float num1, float num2){
+    float i;
+    
+    return num2 += num1 * 60;
+    
+}
