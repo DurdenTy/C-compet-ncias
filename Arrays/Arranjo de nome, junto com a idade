@@ -1,0 +1,26 @@
+#include <stdio.h>  
+
+
+
+
+
+int main()
+{
+    char nome[40], sobrenome[40];
+    int idade;
+    printf("Coloque seu nome: ");
+    scanf("%s", &nome);
+    printf("Coloque seu sobrenome: ");
+    scanf("%s", &sobrenome);
+    printf("Coloque sua idade: ");
+    scanf("%d", &idade);
+    
+    printf("%s %s, tem %d anos de idade.", nome, sobrenome, idade);
+    
+    
+    return 0;
+}
+
+
+    
+    
