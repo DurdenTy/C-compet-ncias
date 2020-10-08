@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+int numero(int num1);
+
+int main()
+{
+    numero(5);
+    
+  return 0;
+}
+
+int numero(int num1){
+    if(num1 % 2 == 0){
+        printf("Seu número é par!!!!");
+    }else{
+        printf("Seu número é impar!!!!");
+    }
+    
+}
