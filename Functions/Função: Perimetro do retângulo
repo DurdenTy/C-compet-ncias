@@ -2,7 +2,7 @@
 
 
 
-float volume(float num1, float num2);
+float perimetro(float num1, float num2);
 
 
 int main()
@@ -13,7 +13,7 @@ int main()
     printf("Coloque a altura do retângulo: ");
     scanf("%f", &num2);
     
-    m = volume(num1, num2);
+    m = perimetro(num1, num2);
     
     printf(" O perimetro do retângulo é %f", m);
     
@@ -22,7 +22,7 @@ int main()
     return 0;
 }
 
-float volume(float num1, float num2){
+float perimetro(float num1, float num2){
     float i;
     
     return i = (num1 + num2) * 2;
