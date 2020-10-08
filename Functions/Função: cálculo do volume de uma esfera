@@ -1,0 +1,29 @@
+#include <stdio.h>  
+
+
+const float pi = 3.14159265358979323846264338327950288419716939937510;
+
+float volume(float num1);
+
+
+int main()
+{
+    float m, num1;
+    printf("Coloque o raio da esfera para resultar no seu volume: ");
+    scanf("%f", &num1);
+    
+    m = volume(num1);
+    
+    printf(" O volume da esfera é %f", m);
+    
+    
+    
+    return 0;
+}
+
+float volume(float num1){
+    float i;
+    
+    return i = (4 * pi * (num1 * num1 * num1))/3;
+    
+}
