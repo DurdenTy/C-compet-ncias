@@ -1,0 +1,28 @@
+#include <stdio.h>  
+
+
+
+float conversao(float num1);
+
+
+int main()
+{
+    float m, num1;
+    printf("Coloque velocidade em km/h para converter em m/s: ");
+    scanf("%f", &num1);
+    
+    m = conversao(num1);
+    
+    printf(" A velocidade é %.2f m/s", m);
+    
+    
+    
+    return 0;
+}
+
+float conversao(float num1){
+    float i;
+    
+    return i = num1/3.6;
+    
+}
