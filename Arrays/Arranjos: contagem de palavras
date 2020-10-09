@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <string.h>
+int main()
+{
+    char palavra[40];
+    int count = 1;
+    
+    printf("Coloque sua palavra: ");
+    gets(palavra);
+    
+    
+    
+    for( int contagem = 0; palavra[contagem] != '\0'; contagem++){
+        if(palavra[contagem] == ' ' || palavra[contagem] == '\t' || palavra[contagem] == '\n'){
+            count++;
+        }
+    }
+
+    
+    printf("O total de palavras é %d \n", count);
+    
+    return 0;
+}
