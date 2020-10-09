@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main()
+{
+    char palavra[40], contagem;
+    
+    printf("Coloque sua palavra: ");
+    scanf("%s", palavra);
+    
+    
+    for(contagem = 0; palavra[contagem] != '\0'; contagem++){
+    }
+    
+    printf("%d \n", contagem);
+    
+    return 0;
+}
