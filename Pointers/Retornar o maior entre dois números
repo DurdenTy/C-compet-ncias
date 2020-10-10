@@ -1,0 +1,30 @@
+# include <stdio.h>
+
+
+
+int main()
+{
+    int x, y, *ptrx, *ptry, soma;
+    
+    printf("Coloque o seu número para retornar o maior: ");
+    scanf("%d", &x);
+    printf("Coloque o seu outro número: ");
+    scanf("%d", &y);
+    ptrx = &x;
+    ptry = &y;
+    soma = *ptrx +  *ptry;
+    if(*ptrx > *ptry){
+        printf("O maior valor é %d", *ptrx);
+    }else{
+        printf("O maior valor é %d", *ptry);
+    }
+    
+    
+  
+    
+
+    
+    
+    return 0;
+}
+
