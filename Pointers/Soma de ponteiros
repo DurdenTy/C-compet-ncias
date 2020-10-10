@@ -1,0 +1,25 @@
+# include <stdio.h>
+
+
+
+int main()
+{
+    int x, y, *ptrx, *ptry, soma;
+    
+    printf("Coloque o seu número para somar: ");
+    scanf("%d", &x);
+    printf("Coloque o seu outro número para somar: ");
+    scanf("%d", &y);
+    ptrx = &x;
+    ptry = &y;
+    soma = *ptrx +  *ptry;
+    
+    printf("A soma é %d", soma);
+  
+    
+
+    
+    
+    return 0;
+}
+
