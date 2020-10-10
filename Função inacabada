@@ -1,0 +1,44 @@
+
+# include <stdio.h>
+
+int ordem();
+
+
+int main()
+{
+    
+    ordem();
+    
+
+    
+    
+    return 0;
+}
+
+
+int ordem(){
+    int n, n2, k = 0;
+    printf("Coloque o tamanho do vetor: ");
+    scanf("%d", &n);
+    
+    
+    int vetor[n], vetor2[n], vetor3[n];
+    for(int t = 0; t < n; t++){
+        printf("Coloque números inteiros, posição %dº: ", t + 1);
+        scanf("%d", &vetor[t]);
+    }
+    for(int u = 0; u < n; u++){
+        vetor2[u] = vetor[u];
+    }
+    for(int i = 0; i < n; i++){
+        for(int l = 0; l < n; l++){
+            if(vetor2[l] >= vetor[i]){
+                vetor3[i] = vetor2[l];
+                printf(" %d  ", vetor2[l], vetor[i], vetor3[i]);
+               
+            }
+              //printf("    %d   ", vetor3[i]);
+        }
+    }
+    
+}
