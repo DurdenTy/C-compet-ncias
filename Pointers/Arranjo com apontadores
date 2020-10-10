@@ -1,0 +1,33 @@
+# include <stdio.h>
+
+
+
+int main()
+{
+    int n;
+    printf("Coloque o tamanho desejado para o vetor: ");
+    scanf("%d", &n);
+    
+    int x, y, *ptrx, *ptry, soma[n];
+    for(int i = 0; i < n; i++){
+        printf("Coloque o seu número para retornar o maior: ");
+        scanf("%d", soma + i);
+    }
+    
+    
+    for(int i = 0; i < n; i++){
+        printf("o vetor posição %dº é igual a: %d \n", i + 1, *(soma + i));
+    }
+    
+    
+    
+    
+    
+  
+    
+
+    
+    
+    return 0;
+}
+
