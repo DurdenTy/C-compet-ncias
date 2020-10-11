@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int main()
+{
+    int n;
+    
+    printf("Escolha o valor máximo do arranjo para resultar no seu cubo: ");
+    scanf("%d", &n);
+    
+    for(int i = 1; i <= 10; i++){
+            printf("A tabuada de %d é %d x %d = %d \n", n, n, i, n * i);
+    }
+    
+    
+    
+
+    return 0;
+}
