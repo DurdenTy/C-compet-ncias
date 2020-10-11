@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int main()
+{
+    int n;
+    
+    printf("Escolha o valor máximo do arranjo para resultar no seu cubo: ");
+    scanf("%d", &n);
+    
+    for(int i = 1; i <= n; i++){
+        printf("O cubo de %d é %d \n",i, i * i * i);
+    }
+    
+    
+    
+
+    return 0;
+}
