@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+int main()
+{
+    int teste = 10, m, o;
+    int *ptrt;
+    ptrt = &teste;
+    
+    printf("O valor de (teste) equivale %d \n", teste);
+    printf("O valor de (m) equivale %d \n", m);
+    printf("O valor de (o) equivale %d \n", o);
+    printf("O valor de ptrt equivale %d \n", *ptrt);
+    
+    printf("O endereço de (teste) equivale %p \n", &teste);
+    printf("O endereço de (m) equivale %p \n", &m);
+    printf("O endereço de (o) equivale %p \n", &o);
+    printf("O endereço de (ptrt) equivale %p \n", ptrt);
+    
+    
+
+    return 0;
+}
