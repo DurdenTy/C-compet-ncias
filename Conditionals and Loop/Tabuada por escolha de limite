@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+int main()
+{
+    int n;
+    
+    printf("Escolha o valor máximo da sua tabuada: ");
+    scanf("%d", &n);
+    
+    for(int i = 1; i <= 10; i++){
+        for(int u = 1; u <= n; u++){
+            printf("%d x %d = %d, ", i, u, u * i);
+        }
+    }
+    
+    
+    
+
+    return 0;
+}
