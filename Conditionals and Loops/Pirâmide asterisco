@@ -1,0 +1,28 @@
+#include <stdio.h>
+
+int main()
+{
+    int n, k = 1;
+    printf("Escolha o valor máximo do arranjo: ");
+    scanf("%d", &n);
+    int soma, o = n;
+    
+    
+    for(int i = 1; i < n + 1; i++){
+        for(int k = n; k >= i; k--){
+            printf(" ");
+        }
+        for(int u = 1; u <= i; u++){
+            printf("* ");
+            if(u == i)
+                printf("\n");
+        }
+        
+    }
+    
+    
+    
+    
+
+    return 0;
+}
