@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+int main()
+{
+    float n;
+    printf("Escolha o valor para a soma: ");
+    scanf("%f", &n);
+    float sum = 1, soma;
+    
+    for(int i = 1; i <= n; i++){
+            soma += (sum/i);
+            printf("1/%d, ", i);
+        }
+        
+        printf("O resultado de %.0f termos é: %f \n", n, soma);
+    
+    
+    
+    
+
+    return 0;
+}
