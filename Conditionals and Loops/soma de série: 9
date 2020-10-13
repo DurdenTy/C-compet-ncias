@@ -1,0 +1,27 @@
+#include <stdio.h>
+
+int main ()
+{
+
+  int n, m = 10, k = 9, soma = 0;
+  printf("Escolha o limite do loop ao quadrado e soma: ");
+  scanf("%d", &n);
+  int array[n];
+  array[0] = 9;
+  
+  
+  for (int i = 1; i < n; i++)
+    {
+      
+      k += 9 * m;
+      m *= 10;
+      array[i] = k;
+      soma += array[i];
+      
+    }
+    printf("A soma total dos termos será: %d \n", soma + 9);
+
+
+
+  return 0;
+}
