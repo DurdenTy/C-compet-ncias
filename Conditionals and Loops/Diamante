@@ -1,3 +1,5 @@
+
+
 #include <stdio.h>
 
 int main ()
@@ -14,31 +16,18 @@ int main ()
         }
         
         for(int u = 1; u <= i; u++){
-            printf("* ");
+            printf(" *");
             if(u == i){
                 printf("\n");
             }
         }
-        /*for(int c = n; c >= i; c--){
-            printf(" *");
-            if(c == i){
-                printf("\n");
-            }
-        }*/
-        
     }   
     for(int i = 1; i <= n + 1; i++){
         for(int k = 0; k <= i; k++){
             printf(" ");
         }
-        /*for(int u = 1; u <= i; u++){
-            printf("* ");
-            if(u == i){
-                printf("\n");
-            }
-        }*/
         for(int c = n; c >= i; c--){
-            printf(" *");
+            printf("* ");
             if(c == i){
                 printf("\n");
             }
