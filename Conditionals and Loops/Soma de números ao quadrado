@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main()
+{ 
+
+   int n, m, k = 0;
+   printf("Escolha o limite do loop ao quadrado e soma:");
+   scanf("%d", &n);
+
+    
+    for(int i = 1; i <= n; i++){
+        m = i * i;
+        k += m;
+        printf(" O quadrado de %d é %d \n", i, m);
+    }   
+    printf("A soma total dos termos será: %d ", k);
+    
+    
+    
+    return 0;
+}
