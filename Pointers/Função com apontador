@@ -1,0 +1,50 @@
+#include <stdio.h>
+
+int soma(int num1, int num2);
+int subtrair(int num1, int num2);
+int multiplicar(int num1, int num2);
+int dividir(int num1, int num2);
+
+int main()
+{
+    int n, x, y, resultado;
+    int (*opcao[4])(int, int);
+    
+    opcao[0] = soma;
+    opcao[1] = subtrair;
+    opcao[2] = multiplicar;
+    opcao[3] = dividir;
+    
+    printf("Qual operação você deseja:\n 0 para somar.\n 1 para subtrair.\n 2 para multiplicar.\n 3 para dividir. \n");
+    scanf("%d", &n);
+    printf("Escolha dois números desejados: ");
+    scanf("%d %d", &x, &y);
+    resultado = opcao[n](x, y);
+    printf(" O resultado será: %d", resultado);
+
+    return 0;
+}
+
+int soma(int num1, int num2){
+    return num1 + num2;
+}
+
+int subtrair(int num1, int num2){
+    return num1 - num2;
+}
+
+int multiplicar(int num1, int num2){
+    return num1 * num2;
+}
+
+int dividir(int num1, int num2){
+    if(num2 == 0){
+        return 0;
+    }else{
+        return num1 / num2;
+    }
+}
+
+
+
+
