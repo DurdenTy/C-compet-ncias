@@ -1,0 +1,35 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+
+int main(){
+	typedef struct{
+		char Sentenca[40];
+	}Judge;
+                          
+	typedef struct{
+		int Idade;
+		char Nome[40];
+		int Altura;
+		Judge julgado;
+	}Ser;
+	
+	Judge sentenca{"guilt"};
+	
+	
+	
+	Ser Vulcano{161, "Spock", 182};
+	Ser humano{177, "J.T. Kirk", 70};
+	Vulcano.julgado = sentenca;
+	humano.julgado = sentenca;
+	
+	
+	printf("     The human named %s, captured in the forbidden planet, age %d, height %d, will be judge with together with the other subject,they was against our most severe rule, of course.\n", humano.Nome, humano.Idade, humano.Altura);
+	printf("He was fighting with a Vulcan, they trying get some object, his name is %s, age %d, height %d, of course the human was losing... Proced de judgement\n", Vulcano.Nome, Vulcano.Idade, Vulcano.Altura);
+	
+	printf("     By the law, we declare %s, %s...",Vulcano.Nome, Vulcano.julgado);
+	printf("And, by the same crime against our rule and comitment to never let someone step on that place, i declare %s, %s..., they are setenced to death.\n", humano.Nome, humano.julgado);
+	
+	printf("     They are in separeted cells, but in they mind, they know that is not they destiny, not to die e a prison, not without trying to escape...");
+	return 0;
+}
