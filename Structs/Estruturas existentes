@@ -1,0 +1,54 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+
+int main(){
+	
+	struct pistola_De_Plasma {
+		int Dano = 25;
+		int Municao = 15;
+		int DanoCritico = 50;
+		int Peso = 0.600;
+		int Precisao = 8.0;
+	};                          
+	struct Pessoa{
+		int Idade;
+		char Nome[40];
+		int Altura;
+	};
+	
+	struct Animal{
+		char Especie[40];
+		char Reino[40];
+		char Raça[40];
+		int Peso;
+		int Altura;
+		int Idade;
+	};
+	struct Objeto{
+		int Tamanho;
+		int Funcao;
+		int Caracteristicas;
+		int Valor;
+	};
+	
+	struct Veiculo{
+		char Marca[40];
+		char Nome[40];
+		char Modelo[40];
+		int Ano;
+		int Tempo_de_uso;
+		int Valor;
+	};
+	
+	struct Pet{
+		int Idade;
+		int Tamanho;
+		char Nome[40];
+		char Raca[40];
+	};
+	
+	
+	
+	return 0;
+}
