@@ -1,0 +1,30 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+
+int main(){
+
+	for(int i = 1; i <= 20; i++){
+		for(int k = 20; k >= i; k--){
+			printf(" ");
+		}
+		for(int u = 1; u <=i/2; u++){
+			printf(" %d", u);
+			if(u == i/2){
+				printf("\n");
+			}
+			for(int l = 10; l >= i/2; l--){
+				printf("%d ", l);
+				if(l == i/2){
+					printf("\n");
+				}
+			}
+		}
+	}
+	
+	
+	
+	
+	
+	return 0;
+}
