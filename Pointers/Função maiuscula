@@ -1,0 +1,24 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+
+char MinusculaParaMaiuscula(char letra);
+
+
+
+
+ int main() {
+ 	
+ 	char (*x)(char);
+ 	char m;
+ 	x = MinusculaParaMaiuscula;
+ 	m = x('t');
+ 	
+ 	printf("%c", m);
+	
+	return 0;
+	}
+	
+char MinusculaParaMaiuscula(char letra){
+	return letra - 32;
+}
