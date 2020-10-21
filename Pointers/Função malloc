@@ -1,0 +1,39 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+
+
+
+
+
+
+ int main() {
+ 	
+ 	
+ 	
+ 	
+	int *x;
+	
+	int m, elementos;
+
+
+	printf("Qual o tamnho do vetor?");
+	scanf("%d", &elementos);
+	
+	x = (int *)(malloc(elementos * sizeof(int)));
+	
+	
+	
+	for(int i = 0; i <  elementos; i++){
+		printf("Qual o numero para o elemento [%d]: ", i);
+		scanf("%d", &x[i]);
+	}
+	
+	for(int i = 0; i < elementos; i++){
+		printf("O valor alocado em %d = %d\n", i, x[i]);
+	}
+	
+	free(x);
+	return 0;
+	}
+	
