@@ -1,0 +1,18 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+
+
+int main(){
+	
+	int m[3] = {5, 4, 3};
+	int *ptr = m;
+	printf("%d\n", *ptr);
+	ptr++;
+	printf("%d\n", *ptr);
+	ptr++;
+	printf("%d", *ptr);
+	
+	
+	return 0;
+}
