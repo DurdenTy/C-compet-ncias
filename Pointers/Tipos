@@ -1,0 +1,24 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+
+int main() {
+	
+	
+	int inteiro;
+	float flutuante;
+	char caracter;
+	char *ponteiro;
+	int *point;
+	float *Pofloat;
+	ponteiro = &caracter;
+	point = &inteiro;
+	Pofloat = &flutuante;
+	*ponteiro = 'T';
+	*point = 40;
+	*Pofloat = 3.1415;
+	printf("%c, %d, %4f", *ponteiro, *point, *Pofloat);
+	
+	
+	return 0;
+}
