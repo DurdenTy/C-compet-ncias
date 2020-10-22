@@ -1,0 +1,22 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+
+
+
+enum meses{
+	Jan = 1, Fev, Mar, Abr, Mai, Jun, Jul, Ago, Sep, Out, Nov, Dec
+};
+
+
+int main() {
+	enum meses mes;
+	const char * const Meses[] = {"Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho", "Agosto", "Setembro", "Outrubro", "Novrembro", "Dezembro"
+	};
+	
+	for(mes = Jan; mes <= Dec; mes++){
+		printf("Hoje:  %s\n", Meses[mes]);
+	}
+	
+	return 0;
+}
