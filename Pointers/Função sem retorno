@@ -1,0 +1,31 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int soma();
+int *Ap;
+
+int main() {
+	
+	
+	soma();
+	printf("%d\n", *Ap);
+	
+	
+	
+	
+	
+	return 0;
+}
+	
+int soma(){
+	int A, B;
+	printf("Coloque o valor A: ");
+	scanf("%d", &A);
+	printf("Coloque o valor B: ");
+	scanf("%d", &B);
+	A = A + B;
+	Ap = &A;
+	A = *Ap;
+	printf(" O valor de A agora é %d", A);
+	
+}
