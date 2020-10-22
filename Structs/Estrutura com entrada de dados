@@ -1,0 +1,26 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+ int main() {
+
+ 	typedef struct{
+ 		char Nome[15];
+ 		char SobreNome[15];
+ 		int Idade;
+ 	
+	 }Pessoa;
+	
+	Pessoa primeira;
+	
+	printf("Coloque o seu nome: ");
+	scanf("%10s", primeira.Nome);
+	printf("Coloque o seu sobrenome: ");
+	scanf("%10s", primeira.SobreNome);
+	printf("Coloque a sua idade: ");
+	scanf("%d", &primeira.Idade);
+	
+	printf("Olá, senhor %s %s, você tem %d", primeira.Nome, primeira.SobreNome, primeira.Idade);
+	
+	return 0;
+	}
+	
