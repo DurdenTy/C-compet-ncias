@@ -1,0 +1,26 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+
+
+int main() {
+	
+	float vetor[10] = {3.1, 3.2, 3.3, 3.4, 3.5, 3.6, 3.7, 3.8, 3.9, 3.0};
+	
+	float *pont;
+	pont = &vetor;
+	
+	int i;
+	
+	for(i = 0; i <= 10; i++){
+		printf("%p\n", pont);
+		pont++;
+	}
+	
+	
+	
+	
+	
+	
+	return 0;
+}
