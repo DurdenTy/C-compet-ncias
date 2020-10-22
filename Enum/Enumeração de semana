@@ -1,0 +1,22 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+
+
+
+enum Semana{
+	Dom = 1, Seg, Ter, Qua, Qui, Sex, Sab
+};
+
+
+int main() {
+	enum Semana dia;
+	const char * const Semanas[] = {"Dom", "Seg", "Ter", "Qua", "Qui", "Sex", "Sab"
+	};
+	
+	for(dia = Dom; dia <= Sab; dia++){
+		printf("Hoje:  %s\n", Semanas[dia]);
+	}
+	
+	return 0;
+}
