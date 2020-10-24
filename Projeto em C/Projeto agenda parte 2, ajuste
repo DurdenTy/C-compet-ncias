@@ -1,0 +1,55 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+#define MAX_CONTATOS 1000 //Define o valor máximo de contatos
+
+
+typedef enum{
+	TELA_SAIR = -1,
+	TELA_PRINCIPAL,
+	TELA_CADASTRAR,
+	TELA_DESCADASTRAR,
+	LISTAR_TODOS,
+} Telas; //Define uma enumeração de escolhas
+
+typedef struct{
+	char nome[128];
+	int telefone[64];
+} Contato; //Cria a variável nova, tipo contato
+
+typedef struct{
+	Telas menu;
+	int TotalContatos;
+	Contato contatos[MAX_CONTATOS];
+} AgendaTelefonica; //Chama a variável contato  e define o limite máximo
+
+
+int main()
+{
+	AgendaTelefonica Agenda; //Cria a variável Agenda do tipo AgendaTelefonica, usa a estrutura como definição padrão
+	memset(&Agenda, 0x0, sizeof(Agenda)); //Zera a agenda e retorna ao tamanho padrão;
+    
+	Agenda.menu = TELA_PRINCIPAL;// liga a variável Agenda a enumeração de menus;
+	int opcao;
+	printf("\t\t   |================================|\n");
+	printf("\t\t   |      Agenda Telefonica         |\n");
+	printf("\t\t   |================================|\n\n\n");
+	printf("\t\t_______________________________________\n\t\t\t |Selecione sua opcao|\n");
+	printf("\t\t |===================================|\n");
+	printf("\t\t |Opcao 1 - Tela principal           |\n");
+	printf("\t\t |Opcao 2 - Tela de cadastro         |\n");
+	printf("\t\t |Opcao 3 - Tela de descadastro      |\n");
+	printf("\t\t |Opcao 4 - Listar todos os cadastros|\n");
+	printf("\t\t |Opcao 0 - Sair da secao            |\n \t\t |===================================|");
+	scanf("%d", &opcao);
+	
+	
+	do{
+		if(opcao == 1){
+			
+		}
+	}while(opcao != 0);
+    
+    return 0;
+}
