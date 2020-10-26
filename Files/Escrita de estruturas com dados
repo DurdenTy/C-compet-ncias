@@ -1,0 +1,36 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+
+
+
+struct clientestr{
+	char nome[10];
+	char sobrenome[10];
+	double saldo;
+	int numero;
+};typedef struct clientestr cliente;
+
+
+
+int main()
+{
+FILE *f = fopen("arq.txt", "w"); cliente c; int ce = 0;
+	if(f = NULL){
+		printf("Arquivo nao pode ser aberto ou está vazio\n");
+		return (EXIT_FAILURE);
+	}
+	printf("infome o saldo do clinte, sobre nome e saldo: ");
+		c.saldo = 0;
+		printf("?");
+		scanf("%10s%10s%lf", c.nome, c.sobrenome, &c.saldo);
+	while(!feof(stdin)){
+		ce += fprintf(f, " %s %s %lf %d", c.nome, c.sobrenome, c.saldo, c.numero++);
+	}
+	printf("foram escritos %d numeros no seu arquivo", ce);
+	fclose(f);
+    
+    return 0;
+}
+
