@@ -1,0 +1,24 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+
+#define SIZE 10
+
+int main()
+{
+FILE *f = fopen("arq.txt", "r");
+char str[SIZE];
+if(f == NULL){
+	printf("O arquivo nao pode ser executado");
+	return(EXIT_FAILURE);
+}
+	
+	while(fgets(str, SIZE, f) != NULL)
+		printf("%s", str);
+	
+	fclose(f);
+	
+    
+    return 0;
+}
